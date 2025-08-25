@@ -1,0 +1,440 @@
+:root {
+  --rosa-pastel: #f8c8dc;
+  --verde-suave: #d1e8e2;
+  --azul-pastel: #b8d8d8;
+  --beige: #f5e1da;
+  --gris-claro: #f0f0f0;
+  --blanco: #ffffff;
+  --negro: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.btn-inicio {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background:  #ff00b3;
+  color: var(--negro);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-inicio:hover {
+  background: #f8c8dc;
+  transform: translateY(-3px);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #f8c8dc 0%, #d1e8e2 100%);
+  padding: 80px 0;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 50px;
+}
+
+.hero-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+
+.hero-title {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.section {
+  padding: 60px 0;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #333333;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: #f8c8dc;
+  border-radius: 2px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #f8c8dc;
+}
+
+.card-img-verde {
+  background: #d1e8e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-azul {
+  background: #b8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card-img-gradient-azul {
+  background: linear-gradient(45deg, #b8d8d8, #d1e8e2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-gradient-rosa {
+  background: linear-gradient(45deg, #f8c8dc, #f5e1da);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-gradient-rosa {
+  background: linear-gradient(45deg, #f8c8dc, #f5e1da);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card-img-gradient-verde {
+  background: linear-gradient(45deg, #d1e8e2, #b8d8d8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-gradient-beige {
+  background: linear-gradient(45deg, #f5e1da, #f8c8dc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-rosa {
+  background: #f8c8dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.card-body {
+  padding: 25px;
+  background-color: #ffffff;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--negro);
+}
+
+.carousel-item {
+  height: 500px;
+  background-color: #f5e1da;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carousel-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+
+
+.carousel-img-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://imagenes.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/09/10/66e067af42bbe.r_d.997-679-0.jpeg');
+  background-size: cover;
+}
+
+.carousel-img-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://pymstatic.com/4016/conversions/bipolaridad-mitos-wide.jpg');
+  background-size: cover;
+}
+
+.carousel-img-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://adipa.cl/content/uploads/2023/02/group-427322635.png-adipa.webp');
+  background-size: cover;
+}
+
+.carousel-img-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://www.adamedtv.com/wp-content/uploads/2022/10/mujer-esquizofrenia-psicosis-trastorno-mental-scaled-e1665121945756.jpg');
+  background-size: cover;
+}
+
+.carousel-img-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://enterapiaonline.com/wp-content/uploads/2024/06/trastorno-por-atracon-1024x585.jpg');
+  background-size: cover;
+}
+
+.carousel-img-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://medialab.unmsm.edu.pe/chiqaqnews/wp-content/uploads/2021/12/huaman-5.jpg');
+  background-size: cover;
+}
+
+.carousel-img-7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://neuro-centro.com/wp-content/uploads/2025/05/adch-concept-with-human-mind-and-brain-2024-10-18-03-30-15-utc-scaled.jpg');
+  background-size: cover;
+}
+
+.carousel-img-8 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://www.bekiapadres.com/images/articulos/portada/85000/85663.jpg');
+  background-size: cover;
+}
+
+.carousel-img-9 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://cdn.apollohospitals.com/health-library-prod/2021/10/Reactive-Attachment-Disorder.jpg');
+  background-size: cover;
+}
+
+.carousel-img-10 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://www.psicoactiva.com/wp-content/uploads/2019/10/amnesia-disociativa.jpg');
+  background-size: cover;
+}
+
+.carousel-img-11 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://estaticos-cdn.prensaiberica.es/clip/667532ef-2d2a-4c6c-9083-ddb3e6d9039c_21-9-aspect-ratio_default_1193036.jpg');
+  background-size: cover;
+}
+
+.carousel-img-12 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.ytimg.com/vi/nCyDiGC3GQc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDFHfXlK5kSlBSacfyRLvHBlwEl5Q');
+  background-size: cover;
+}
+
+.carousel-caption {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  bottom: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #333333;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #f8c8dc;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.list-icon {
+  font-size: 2.5rem;
+  color: palevioletred;
+  margin-right: 20px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.symptoms-list {
+  list-style: none;
+}
+
+.symptoms-list li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border-left: 4px solid #b8d8d8;
+  border-radius: 0 10px 10px 0;
+}
+
+.symptoms-list li::before {
+  content: "•";
+  color: #f8c8dc;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.btn-referencias {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-referencias:hover {
+  background: #b8d8d8;
+  transform: translateY(-3px);
+}
+
+.modal-content {
+  border-radius: 20px;
+  border: none;
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #f8c8dc 0%, #b8d8d8 100%);
+  border-radius: 20px 20px 0 0 !important;
+  padding: 20px;
+}
+
+.modal-title {
+  font-weight: 700;
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.footer {
+  background: linear-gradient(135deg, #b8d8d8 0%, #d1e8e2 100%);
+  padding: 40px 0 20px;
+  color: #ff0000;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+
+.icon-xl {
+  font-size: 5rem;
+}
+
+.icon-white {
+  color: #333333;
+}
+
+.icon-rosa {
+  color: black;
+}
+
+.icon-azul {
+  color: #b8d8d8;
+}
+
+.icon-verde {
+  color: #d1e8e2;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-section-beige {
+  background-color: #f5e1da;
+}
+
+.bg-section-verde {
+  background-color: #d1e8e2;
+}
+
+.bg-section-gris {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    width: 50px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .carousel-item {
+    height: 400px;
+  }
+
+  .list-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .list-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
